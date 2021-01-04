@@ -1,0 +1,6 @@
+cache.sqlite
+.mypy_cache/
+.idea/
+__pycache__/
+data/images/
+data/gifs/

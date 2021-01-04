@@ -1,0 +1,9 @@
+pandas
+purpleair
+pickle
+PIL
+datetime
+cartopy
+matplotlib
+numpy
+imageio
