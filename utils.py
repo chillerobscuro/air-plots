@@ -75,7 +75,7 @@ def get_changers(df_list, var_to_viz='temp_f', subset='all'):
     print(set(chngrs))
 
 
-title_dict = {'temp_f': 'Temp (F)', 'Temperature_F': 'Temp (F)', 'pm_2.5_old': 'AQI (PM2.5)',
+title_dict = {'temp_f': 'Temp (F)', 'Temperature_F': 'Temp (F)', 'pm_2.5': 'AQI (PM2.5)',
               'PM2.5_CF_ATM_ug/m3': 'AQI (PM2.5)'}
 
 data_cols = {

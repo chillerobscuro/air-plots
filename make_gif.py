@@ -21,7 +21,7 @@ def make_gif(from_path: str, to_path: str, fps: int = 8) -> None:
 
 
 if __name__ == "__main__":
-    pth = './data/images/pm_2.5_old/'
+    pth = './data/images/pm_2.5/'
     write_path = 'data/gifs/sensor_movie.gif'
 
     make_gif(pth, write_path)

@@ -66,7 +66,7 @@ def parallel_pull(
             fields = ["created_at", "PM2.5_CF_ATM_ug/m3", "Temperature_F", "Humidity_%"]
             # Keep only interesting columns and reformat, resample
             trimmed_df = df[fields]
-            trimmed_df = trimmed_df.rename(columns={"PM2.5_CF_ATM_ug/m3": "pm_2.5_old"})
+            trimmed_df = trimmed_df.rename(columns={"PM2.5_CF_ATM_ug/m3": "pm_2.5"})
             trimmed_df = trimmed_df.assign(lat=lat, lon=lon)
             trimmed_df.set_index("created_at", inplace=True)
             trimmed_df = trimmed_df.resample(f"{resample_rate}s").mean()

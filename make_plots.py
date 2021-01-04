@@ -67,7 +67,7 @@ def output_plots(
         lon = df["lon"].values
 
         # Variable from which to generate the color gradient
-        if var_to_viz in ["pm_2.5_old", "PM2.5_CF_ATM_ug/m3"]:
+        if var_to_viz in ["pm_2.5", "PM2.5_CF_ATM_ug/m3"]:
             colors = df[var_to_viz].fillna(-1).apply(aqi_from_pm).values
 
         elif var_to_viz == "temp_f":
@@ -118,7 +118,7 @@ def output_plots(
 
 if __name__ == "__main__":
     fl = "data/raw/testeroni.pkl"
-    var = "pm_2.5_old"
+    var = "pm_2.5"
     # var = 'Temperature_F'
     # var = 'Humidity_%'
     output_plots(fl, var_to_viz=var)
